@@ -1,3 +1,36 @@
 body {
-    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+em {
+    background-color: #dfe2ee;
+    font-weight: 700;
+    font-style: normal;
+}
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.ais-Hits-item{
+    position: relative;
+}
+
+.hit_thumbnail {
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+    left: 0;
+    z-index: 100;
+}
+
+.ais-Hits-item > div {
+    margin-left: 100px;
 }
