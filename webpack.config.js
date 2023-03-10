@@ -35,7 +35,7 @@ export default {
         new MiniCssExtractPlugin({
             filename: 'index.[contenthash].css'
         }),
-        new Dotenv()
+        new Dotenv(),
     ],
     module: {
         rules: [
@@ -53,6 +53,9 @@ export default {
             {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
+                resolve: {
+                    fullySpecified: false, // disable the behaviour
+                  },
                 use: {
                   loader: 'babel-loader',
                   options: {
