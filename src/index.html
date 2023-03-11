@@ -24,16 +24,20 @@
 <body>
     <div class="container">
         <header>
-            <div id="searchbox"></div>
+            <h1>Algolia Academy - Crawler Lab</h1> 
         </header>
         <main>
-            <div id="left-column">
-                <div class="filter-widgets" id="category">
-
-                </div>
+            <div id="left-column" class="refinment">
+                <div class="filter-widgets" id="clearRefinements"></div>
+                <h2>Category</h2>
+                <div class="filter-widgets" id="category"></div>
+                <h2>Author</h2>
+                <div class="filter-widgets" id="author"></div>
             </div>
             <div id="right-column">
+                <div id="searchbox" class="searchbox"></div>
                 <div id="hits"></div>
+                <div id="pagination"></div>
             </div>
         </main>
     </div>
